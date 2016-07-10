@@ -1,0 +1,56 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../airport-plane-travel.jpg");
+  background-color: #cccccc;
+  background-size: 1920px 1080px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 60px;
+  margin: auto;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.form-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#iata-input {
+  margin: auto;
+  width: 300px;
+}
+
+#iata-input-2 {
+  margin: auto;
+  width: 300px;
+}
+
+.pure-button {
+  margin-top: 10px;
+}
+
+.results {
+  margin: auto;
+  text-align: center;
+  background-color: #F5F5F5;
+  opacity: 0.9;
+  width: 46.5%;
+  border: 25px;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+#map {
+        height: 50%;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 25px;
+      }

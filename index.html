@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Port2Port</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <script src="js/application.js"></script>
+    <link href="css/application.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArX6GiFBb63Jf1AeTpgy02DYAsnT8cPQ0&callback=initMap"
+    async defer></script>
+
+</head>
+
+<body>
+    <h1>Port2Port</h1>
+    <div class="form-div">
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <label for="airport-1"></label>
+                <input id="iata-input" class="autocomplete airport-1" type="text" name="keyword" placeholder="U.S. City Name or Airport code" required/><br>
+                <label for="airport-2"></label>
+                <input id="iata-input-2" class="autocomplete airport-2" type="text" name="keyword" placeholder="U.S. City Name or Airport code" required/><br>
+                <input type="submit" class="pure-button pure-button-primary" value="calculate" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="results" style="display:none">
+        <div id="airport-info-container" style="display:none">
+            <h2>From</h2>
+            <div id="airport-info"></div>
+        </div>
+
+        <div id="airport-info-container-2" style="display:none">
+            <h2>To</h2>
+            <div id="airport-info-2"></div>
+        </div>
+
+        <div id="airport-distance-container" style="display:none">
+            <div id="airport-distance">
+                <h2>Distance</h2>
+                <div id="distance_div"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</body>
+
+</html>
+
